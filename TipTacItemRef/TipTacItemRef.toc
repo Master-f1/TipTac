@@ -1,7 +1,7 @@
 ## Interface: 30300
 ## Version: 10.02.27
 ## Title: TipTacItemRef
-## Author: Aezay (Earthen Ring EU), Мастер (перевёл на русский)
+## Author: Aezay (Earthen Ring EU), Master-f1 (перевёл на русский)
 ## Notes: |@Version: 2@|Improved ItemRefTooltip
 ## Notes-ruRU: |@Version: 2@|Подсказка по ссылке на предмет
 ## Dependencies: TipTac
