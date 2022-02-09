@@ -17,7 +17,7 @@ local TT_DefaultConfig = {
 	nameType = "title",
 	showRealm = "show",
 	showTarget = "last",
-	targetYouText = "<<YOU>>",
+	targetYouText = "<<Вы>>",
 	showTargetedBy = true,
 
 	gttScale = 1,
@@ -65,9 +65,9 @@ local TT_DefaultConfig = {
 
 	classification_normal = "%s ",
 	classification_elite = "+%s ",
-	classification_worldboss = "%s|r (Boss) ",
-	classification_rare = "%s|r (Rare) ",
-	classification_rareelite = "+%s|r (Rare) ",
+	classification_worldboss = "%s|r (Босс) ",
+	classification_rare = "%s|r (Редкий) ",
+	classification_rareelite = "+%s|r (Элитный) ",
 
 	overrideFade = true,
 	preFadeTime = 0.1,
@@ -476,7 +476,7 @@ local function ModifyUnitTooltip()
 				lineOne[#lineOne + 1] = "\n  ";
 				AddTarget(lineOne,target);
 			elseif (cfg.showTarget == "last") then
-				lineInfo[#lineInfo + 1] = "\n|cffffd100Targeting: ";
+				lineInfo[#lineInfo + 1] = "\n|cffffd100Цель: ";
 				AddTarget(lineInfo,target);
 			end
 		end

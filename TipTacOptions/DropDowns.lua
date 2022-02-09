@@ -109,7 +109,7 @@ local layout_presets = {
 	-- TipTac Layout
 	["TipTac NewStyle"] = {
 		showTarget = "last",
-		targetYouText = "<<YOU>>",
+		targetYouText = "<<Вы>>",
 
 		tipBackdropBG = "Interface\\Buttons\\WHITE8X8",
 		tipBackdropEdge = "Interface\\Tooltips\\UI-Tooltip-Border",
@@ -136,9 +136,9 @@ local layout_presets = {
 
 		classification_normal = "%s ",
 		classification_elite = "+%s ",
-		classification_worldboss = "%s|r (Boss) ",
-		classification_rare = "%s|r (Rare) ",
-		classification_rareelite = "+%s|r (Rare) ",
+		classification_worldboss = "%s|r (Босс) ",
+		classification_rare = "%s|r (Редкий) ",
+		classification_rareelite = "+%s|r (Редкий) ",
 
 		overrideFade = true,
 		preFadeTime = 0.1,
@@ -156,7 +156,7 @@ local layout_presets = {
 	-- TipTac Layout
 	["TipTac OldStyle"] = {
 		showTarget = "second",
-		targetYouText = "<<YOU>>",
+		targetYouText = "<<Вы>>",
 
 		tipBackdropBG = "Interface\\Tooltips\\UI-Tooltip-Background",
 		tipBackdropEdge = "Interface\\Tooltips\\UI-Tooltip-Border",
@@ -182,9 +182,9 @@ local layout_presets = {
 
 		classification_normal = "%s ",
 		classification_elite = "+%s ",
-		classification_worldboss = "%s|r (Boss) ",
-		classification_rare = "%s|r (Rare) ",
-		classification_rareelite = "+%s|r (Rare) ",
+		classification_worldboss = "%s|r (Босс) ",
+		classification_rare = "%s|r (Редкий) ",
+		classification_rareelite = "+%s|r (Редкий) ",
 
 		hideDefaultBar = true,
 		healthBar = true,
@@ -197,7 +197,7 @@ local layout_presets = {
 	-- TipBuddy Layout
 	["TipBuddy"] = {
 		showTarget = "first",
-		targetYouText = "[YOU]",
+		targetYouText = "[Вы]",
 
 		tipBackdropBG = "Interface\\Tooltips\\UI-Tooltip-Background",
 		tipBackdropEdge = "Interface\\Tooltips\\UI-Tooltip-Border",
@@ -222,9 +222,9 @@ local layout_presets = {
 
 		classification_normal = "%s ",
 		classification_elite = "+%s ",
-		classification_worldboss = "%s|r (Boss) ",
-		classification_rare = "%s|r (Rare) ",
-		classification_rareelite = "+%s|r (Rare) ",
+		classification_worldboss = "%s|r (Босс) ",
+		classification_rare = "%s|r (Редкий) ",
+		classification_rareelite = "+%s|r (Редкий) ",
 
 		hideDefaultBar = false,
 		healthBar = false,
@@ -234,7 +234,7 @@ local layout_presets = {
 	-- TinyTip Layout
 	["TinyTip"] = {
 		showTarget = "last",
-		targetYouText = "<<YOU>>",
+		targetYouText = "<<Вы>>",
 
 		tipBackdropBG = "Interface\\Tooltips\\UI-Tooltip-Background",
 		tipBackdropEdge = "Interface\\Tooltips\\UI-Tooltip-Border",
@@ -250,9 +250,9 @@ local layout_presets = {
 
 		classification_normal = "Level %s",
 		classification_elite = "Level %s|cffffcc00 Elite",
-		classification_worldboss = "Level %s|cffff0000 Boss",
-		classification_rare = "Level %s|cffff66ff Rare",
-		classification_rareelite = "Level %s|cffffaaff Rare Elite",
+		classification_worldboss = "Level %s|cffff0000 Босс",
+		classification_rare = "Level %s|cffff66ff Редкий",
+		classification_rareelite = "Level %s|cffffaaff Редкий элитный",
 
 		hideDefaultBar = false,
 		healthBar = false,
@@ -262,7 +262,7 @@ local layout_presets = {
 	-- Solid Border Layout
 	["Solid Border"] = {
 		showTarget = "last",
-		targetYouText = "|cffff0000<<YOU>>",
+		targetYouText = "|cffff0000<<Вы>>",
 
 		tipBackdropBG = "Interface\\Buttons\\WHITE8X8",
 		tipBackdropEdge = "Interface\\Buttons\\WHITE8X8",
