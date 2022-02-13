@@ -12,10 +12,10 @@ local options = {
 		{ type = "Check", var = "showUnitTip", label = "Включить подсказки TipTac", tip = "Изменить внешний вид подсказок. Многие параметры в TipTac работают только при включенном этом параметре.", y = 8 },
 		{ type = "Check", var = "showStatus", label = "Показать статус DC, AFK и DND", tip = "Показать статус <DC-не в сети>, <AFK-отсутствует> и <DND-не беспокоить> после имени игрока." },
 		{ type = "Check", var = "showGuildRank", label = "Показать звание игрока в гильдии", tip = "В дополнение к названию гильдии, если эта опция включена, вы также увидите звание игрока в гильдии." },
-		{ type = "Check", var = "showTargetedBy", label = "Показать, кто нацелился на вашу цель", tip = "Находясь в рейде или группе, подсказка покажет, кто из вашей группы нацелился на вашу цель.", y = 16 },
+		{ type = "Check", var = "showTargetedBy", label = "Показать, кто нацелился на вашу цель", tip = "Подсказка покажет, кто нацелился на вашу цель.", y = 16 },
 		{ type = "DropDown", var = "nameType", label = "Имя", list = { ["Только имя"] = "normal", ["Имя и звание"] = "title", ["Использовать исходник"] = "original" } },
-		{ type = "DropDown", var = "showRealm", label = "Игровой мир", list = { ["Показать"] = "show", ["Не показывать"] = "none", ["Показать (*) вместо"] = "asterisk" } },
-		{ type = "DropDown", var = "showTarget", label = "Показать цель", list = { ["Не показывать цель"] = "none", ["Первая строка"] = "first", ["Вторая строка"] = "second", ["Последняя строка"] = "last" }, y = 16 },
+		{ type = "DropDown", var = "showRealm", label = "Игровой мир", list = { ["Показать"] = "show", ["Не показывать"] = "none" } },
+		{ type = "DropDown", var = "showTarget", label = "Расположение целей", list = { ["Не показывать"] = "none", ["Первая строка"] = "first", ["Вторая строка"] = "second", ["Последняя строка"] = "last" }, y = 16 },
 		{ type = "Text", var = "targetYouText", label = "Свой текст" },
 	},
 	-- Special
@@ -168,10 +168,10 @@ local options = {
 	},
 	-- Layouts
 	{
-		[0] = "Стиль",
-		{ type = "DropDown", label = "Заготовки", init = TipTacDropDowns.LoadLayout_Init, y = 20 },
+		[0] = "Обложки",
+		{ type = "DropDown", label = "Установить", init = TipTacDropDowns.LoadLayout_Init, y = 20 },
 --		{ type = "Text", label = "Save Layout", func = nil },
---		{ type = "DropDown", label = "Delete Layout", init = TipTacDropDowns.DeleteLayout_Init },
+--		{ type = "DropDown", label = "Уладить", init = TipTacDropDowns.DeleteLayout_Init },
 	},
 };
 

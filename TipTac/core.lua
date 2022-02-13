@@ -212,7 +212,7 @@ tt:SetPoint("CENTER");
 tt:Hide();
 
 tt.text = tt:CreateFontString(nil,"ARTWORK","GameFontHighlight");
-tt.text:SetText("TipTacAnchor");
+tt.text:SetText("Передвиньте");
 tt.text:SetPoint("LEFT",6,0);
 
 tt.close = CreateFrame("Button",nil,tt,"UIPanelCloseButton");
@@ -467,7 +467,7 @@ local function ModifyUnitTooltip()
 	if (cfg.showTarget ~= "none") then
 		local targetUnit = unit.."target";
 		local target = UnitName(targetUnit);
-		if (target) and (target ~= UNKNOWN and target ~= "" or UnitExists(targetUnit)) then
+		if (target) and (target ~= UNKNOWN and target ~= "" or UnitExists(targetUnit)) and (cfg.showTargetedBy) then
 			if (cfg.showTarget == "first") then
 				lineOne[#lineOne + 1] = COL_WHITE;
 				lineOne[#lineOne + 1] = " : |r";
@@ -536,7 +536,7 @@ local function AddTargetedBy()
 			targetedList[#targetedList] = nil;
 			gtt:AddLine(" ",nil,nil,nil,1);
 			local line = _G["GameTooltipTextLeft"..gtt:NumLines()];
-			line:SetFormattedText("Targeted By (|cffffffff%d|r): %s",(#targetedList + 1) / 3,table.concat(targetedList));
+			line:SetFormattedText("Нацелены (|cffffffff%d|r): %s",(#targetedList + 1) / 3,table.concat(targetedList));
 			wipe(targetedList);
 		end
 	end

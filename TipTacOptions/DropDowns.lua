@@ -6,7 +6,7 @@ local LSM = LibStub and LibStub("LibSharedMedia-3.0",1);
 
 -- DropDown Lists
 TipTacDropDowns.FontFlags = {
-	["|cffffa0a0Нет"] = "",
+	["Нет"] = "",
 	["Тонкий"] = "OUTLINE",
 	["Толстый"] = "THICKOUTLINE",
 };
@@ -29,7 +29,7 @@ TipTacDropDowns.AnchorPos = {
 };
 
 TipTacDropDowns.BarTextFormat = {
-	["|cffffa0a0Не показывать"] = "none",
+	["Не показывать"] = "none",
 	["Процент"] = "percent",
 	["Число"] = "value",
 	["Число (кратко)"] = "auto",
@@ -138,7 +138,7 @@ local layout_presets = {
 		classification_elite = "+%s ",
 		classification_worldboss = "%s|r (Босс) ",
 		classification_rare = "%s|r (Редкий) ",
-		classification_rareelite = "+%s|r (Редкий) ",
+		classification_rareelite = "+%s|r (Элитный) ",
 
 		overrideFade = true,
 		preFadeTime = 0.1,
@@ -184,7 +184,7 @@ local layout_presets = {
 		classification_elite = "+%s ",
 		classification_worldboss = "%s|r (Босс) ",
 		classification_rare = "%s|r (Редкий) ",
-		classification_rareelite = "+%s|r (Редкий) ",
+		classification_rareelite = "+%s|r (Элитный) ",
 
 		hideDefaultBar = true,
 		healthBar = true,
@@ -224,7 +224,7 @@ local layout_presets = {
 		classification_elite = "+%s ",
 		classification_worldboss = "%s|r (Босс) ",
 		classification_rare = "%s|r (Редкий) ",
-		classification_rareelite = "+%s|r (Редкий) ",
+		classification_rareelite = "+%s|r (Элитный) ",
 
 		hideDefaultBar = false,
 		healthBar = false,
@@ -248,11 +248,11 @@ local layout_presets = {
 		colRace = "|cffddeeaa",
 		colLevel = "|cffffcc00",
 
-		classification_normal = "Level %s",
-		classification_elite = "Level %s|cffffcc00 Elite",
-		classification_worldboss = "Level %s|cffff0000 Босс",
-		classification_rare = "Level %s|cffff66ff Редкий",
-		classification_rareelite = "Level %s|cffffaaff Редкий элитный",
+		classification_normal = "Лвл %s",
+		classification_elite = "Лвл %s|cffffcc00 Элитный",
+		classification_worldboss = "Лвл %s|cffff0000 Босс",
+		classification_rare = "Лвл %s|cffff66ff Редкий",
+		classification_rareelite = "Лвл %s|cffffaaff Редкий элитный",
 
 		hideDefaultBar = false,
 		healthBar = false,
@@ -283,12 +283,12 @@ local function LoadLayout_SelectValue(dropDown,entry,index)
 		cfg[name] = value;
 	end
 	TipTac:ApplySettings();
-	dropDown.label:SetText("|cff80ff80Layout Loaded");
+	dropDown.label:SetText("|cff80ff80Загружено");
 end
 
 local function DeleteLayout_SelectValue(dropDown,entry,index)
 	layout_presets[entry.value] = nil;
-	dropDown.label:SetText("|cffff8080Layout Deleted!");
+	dropDown.label:SetText("|cffff8080Удалено!");
 end
 
 function TipTacDropDowns.LoadLayout_Init(dropDown,list)
@@ -298,7 +298,7 @@ function TipTacDropDowns.LoadLayout_Init(dropDown,list)
 		tbl = list[#list + 1];
 		tbl.text = name; tbl.value = name;
 	end
-	dropDown.label:SetText("|cff00ff00Pick Layout...");
+	dropDown.label:SetText("|cff00ff00Выберите для загрузки");
 end
 
 function TipTacDropDowns.DeleteLayout_Init(dropDown,list)
@@ -308,5 +308,5 @@ function TipTacDropDowns.DeleteLayout_Init(dropDown,list)
 		tbl = list[#list + 1];
 		tbl.text = name; tbl.value = name;
 	end
-	dropDown.label:SetText("|cff00ff00Delete Layout...");
+	dropDown.label:SetText("|cff00ff00Выберите для удаления");
 end
