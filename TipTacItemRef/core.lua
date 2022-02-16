@@ -108,7 +108,7 @@ function TipTypeFuncs.achievement(tip,refString,id)
 	tip:AddLine(BoolCol(complete:match("earned"))..complete);
 	if (#criteriaList > 0) then
 		tip:AddLine(" ");
-		tip:AddLine("Achievement Criteria |cffffffff"..criteriaComplete.."|r of |cffffffff"..#criteriaList);
+		tip:AddLine("Требования: |cffffffff"..criteriaComplete.."|r из |cffffffff"..#criteriaList);
 		local r1, g1, b1, r2, g2, b2;
 		local myDone1, myDone2;
 		for i = 1, #criteriaList, 2 do
