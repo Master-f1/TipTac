@@ -20,7 +20,7 @@ local options = {
 	},
 	-- Special
 	{
-		[0] = "Спец.",
+		[0] = "Масштаб",
 		{ type = "Slider", var = "gttScale", label = "Масштаб", min = 0.2, max = 4, step = 0.05 },
 		{ type = "Slider", var = "updateFreq", label = "Частота обновления", min = 0, max = 5, step = 0.05 },
  	},

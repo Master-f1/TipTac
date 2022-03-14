@@ -70,7 +70,7 @@ local LibSharedMediaSubstitute = not LSM and {
 		["Solid"] = "Interface\\Buttons\\WHITE8X8",
 	},
 	["border"] = {
-		["None"] = "Interface\\None",
+		["Нет"] = "Interface\\None",
 		["Blizzard Dialog"]  = "Interface\\DialogFrame\\UI-DialogBox-Border",
 		["Blizzard Tooltip"] = "Interface\\Tooltips\\UI-Tooltip-Border",
 		["Solid"] = "Interface\\Buttons\\WHITE8X8",
@@ -109,7 +109,7 @@ local layout_presets = {
 	-- TipTac Layout
 	["TipTac NewStyle"] = {
 		showTarget = "last",
-		targetYouText = "<<Вы>>",
+		targetYouText = "<Вы>",
 
 		tipBackdropBG = "Interface\\Buttons\\WHITE8X8",
 		tipBackdropEdge = "Interface\\Tooltips\\UI-Tooltip-Border",
@@ -234,7 +234,7 @@ local layout_presets = {
 	-- TinyTip Layout
 	["TinyTip"] = {
 		showTarget = "last",
-		targetYouText = "<<Вы>>",
+		targetYouText = "<Вы>",
 
 		tipBackdropBG = "Interface\\Tooltips\\UI-Tooltip-Background",
 		tipBackdropEdge = "Interface\\Tooltips\\UI-Tooltip-Border",

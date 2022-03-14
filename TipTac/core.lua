@@ -1213,7 +1213,5 @@ function tt:ApplyGeneralAppearance(first)
 		SetupAuras();
 	end
 	-- Custom
-	if (cfg.mouseTip) then
-		
-	end
+	if (cfg.mouseTip) then end
 end
